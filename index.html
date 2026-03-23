@@ -120,7 +120,7 @@
     .exp-list li::before{content:"—";position:absolute;left:0;color:var(--pink);font-size:.72rem;top:2px}
 
     /* PROJECTS */
-    .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;gap:1px;background:var(--border)}
+    .proj-grid{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;gap:1px;background:var(--border)}
     .proj-card{background:var(--bg);padding:32px 28px;display:flex;flex-direction:column;gap:18px;position:relative;overflow:hidden;transition:background .22s}
     .proj-card::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--pink),transparent);opacity:0;transition:opacity .28s}
     .proj-card:hover{background:var(--bg2)}.proj-card:hover::before{opacity:1}
@@ -133,6 +133,9 @@
     .proj-kpi span{font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;color:var(--muted)}
     .proj-tags{display:flex;flex-wrap:wrap;gap:5px}
     .proj-tags span{font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;color:var(--muted);padding:3px 8px;background:var(--surface);border-radius:2px}
+    .proj-links{display:flex;gap:14px}
+    .proj-link{font-family:var(--mono);font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
+    .proj-link:hover{color:var(--pink)}.proj-link::after{content:" â†—"}
     .proj-links{display:flex;gap:14px}
     .proj-link{font-family:var(--mono);font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
     .proj-link:hover{color:var(--pink)}.proj-link::after{content:" ↗"}
@@ -237,7 +240,7 @@
       <div class="hero-grid">
         <div class="hero-copy">
           <h1 class="hero-name r d1">Ananya<br><em>Goswami</em></h1>
-          <p class="hero-desc r d2">Associate in Growth & Marketing at ConveGenius AI &#8212; crafting high-frequency communication systems, campaign strategy, and channel intelligence across YouTube, WhatsApp, push, and in-app journeys.</p>
+          <p class="hero-desc r d2">Associate in Growth & Marketing at ConveGenius AI, driving communication systems and campaign strategy across SwiftChat, 9+ YouTube channels, and WhatsApp through high-impact content and lifecycle journeys.</p>
           <div class="hero-status r d3">
             <div class="status-item">
               <span class="status-label">Current role</span>
@@ -277,10 +280,11 @@
           </div>
           <p class="exp-role">Associate &#183; Growth & Marketing</p>
           <ul class="exp-list">
-            <li>Wrote 100+ scripts and content assets across WhatsApp, push, in-app, and YouTube campaigns.</li>
-            <li>Executed lifecycle messaging for new courses, state launches, and regional activation plans.</li>
-            <li>Ran comment, sentiment, and category analysis to refine communication angles.</li>
-            <li>Improved notification performance with higher-precision hooks and structured testing loops.</li>
+            <li>Created 150+ multilingual scripts and content assets across WhatsApp, notifications, and YouTube.</li>
+            <li>Analyzed user sentiment to improve content and communication strategy.</li>
+            <li>Led lifecycle messaging for course launches, state rollouts, and regional activations.</li>
+            <li>Built an end to end in app notification journey for a SwiftChat mini app to drive user progression.</li>
+            <li>Improved notification performance through stronger hooks and structured testing.</li>
           </ul>
         </div>
         <div class="exp-card r d1">
@@ -290,9 +294,9 @@
           </div>
           <p class="exp-role">Marketing Intern</p>
           <ul class="exp-list">
-            <li>Supported YouTube, WhatsApp, and paid-social campaign execution with bilingual content.</li>
-            <li>Built content calendars, wrote creative copy, and aligned assets across stakeholders.</li>
-            <li>Tracked content response patterns and surfaced performance cues for sharper decisions.</li>
+            <li>Executed YouTube, WhatsApp, and multi channel campaigns using multilingual content.</li>
+            <li>Built content calendars, crafted creative copy, and aligned assets across stakeholders.</li>
+            <li>Analyzed content performance and user response patterns to inform better decisions.</li>
           </ul>
         </div>
       </div>
@@ -333,30 +337,18 @@
       <h2 class="s-title r">Work that <em>speaks</em> for itself.</h2>
       <div class="proj-grid">
         <article class="proj-card r">
-          <p class="proj-num">001</p><span class="proj-chip">Campaign OS</span>
-          <h3 class="proj-title">Pulseboard CRM</h3>
-          <p class="proj-desc">An internal platform concept for tracking campaign owners, approval states, and reporting hygiene across multiple channels &#8212; structured like a real case-study.</p>
-          <div class="proj-kpis"><div class="proj-kpi"><strong>42%</strong><span>Faster status tracking</span></div><div class="proj-kpi"><strong>3&#215;</strong><span>Cleaner handoff flow</span></div></div>
-          <div class="proj-tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>RBAC</span></div>
-          <div class="proj-links"><a href="https://example.com/pulseboard-live" class="proj-link" target="_blank" rel="noreferrer">Live</a><a href="https://example.com/pulseboard-case" class="proj-link" target="_blank" rel="noreferrer">Case</a></div>
+          <p class="proj-num">001</p><span class="proj-chip">Engagement Mini App</span>
+          <h3 class="proj-title">Competition Zone</h3>
+          <p class="proj-desc">A gamified mini app for students to discover, join, register and compete in real time competitions, combining public initiatives, learning, and social motivation into one unified experience. Designed to feel playful while driving participation at scale.</p>
+          <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="proj-links"><a href="https://ananya-goswami.github.io/Competition-Zone/" class="proj-link" target="_blank" rel="noreferrer">Prototype</a></a></div>
         </article>
         <article class="proj-card r d1">
-          <p class="proj-num">002</p><span class="proj-chip">Insight Stack</span>
-          <h3 class="proj-title">Market Atlas</h3>
-          <p class="proj-desc">A sample analytics case card designed like a polished consulting data story &#8212; showcasing how context, impact, and structure combine without technical overload.</p>
-          <div class="proj-kpis"><div class="proj-kpi"><strong>19%</strong><span>Projected margin gain</span></div><div class="proj-kpi"><strong>6</strong><span>Decision tracks</span></div></div>
-          <div class="proj-tags"><span>Python</span><span>Power BI</span><span>Forecasting</span><span>SQL</span></div>
-          <div class="proj-links"><a href="https://example.com/market-atlas-live" class="proj-link" target="_blank" rel="noreferrer">Dashboard</a><a href="https://example.com/market-atlas-case" class="proj-link" target="_blank" rel="noreferrer">Deck</a></div>
-        </article>
-        <article class="proj-card r d2">
-          <p class="proj-num">003</p><span class="proj-chip">Lead Capture</span>
-          <h3 class="proj-title">Swiftleads</h3>
-          <p class="proj-desc">A no-backend utility card built to mimic fast shipping energy &#8212; one specific job, a clear operating story, and a clean visual frame for rapid internal tools.</p>
-          <div class="proj-kpis"><div class="proj-kpi"><strong>4h</strong><span>Build time</span></div><div class="proj-kpi"><strong>Zero</strong><span>Infra overhead</span></div></div>
-          <div class="proj-tags"><span>Apps Script</span><span>Google Sheets</span><span>Drive API</span></div>
-          <div class="proj-links"><a href="https://example.com/swiftleads-live" class="proj-link" target="_blank" rel="noreferrer">Form</a><a href="https://example.com/swiftleads-case" class="proj-link" target="_blank" rel="noreferrer">Notes</a></div>
-        </article>
-      </div>
+          <p class="proj-num">002</p><span class="proj-chip">Chrome Extension</span>
+          <h3 class="proj-title">Youtube-live-chat-downloader</h3>
+          <p class="proj-desc">Capture YouTube live + replay chat and export per-video CSV (Real Time IST, Author, Message).</p>
+          <div class="proj-tags"><span>JavaScript</span><span>Chrome Extension Development (Manifest v3)</span><span>Browser APIs</span><span>Reverse Engineering Web Apps (YouTube)</span></div>
+          <div class="proj-links"><a href="https://github.com/ananya-goswami/Youtube-live-chat-downloader" class="proj-link" target="_blank" rel="noreferrer">Github Link</a></a></div>
     </div>
   </section>
 
@@ -366,7 +358,7 @@
     <div class="shell">
       <p class="s-label contact-label r">05 &#183; Let's talk</p>
       <h2 class="contact-title r">Let's build<br><em>something memorable.</em></h2>
-      <p class="contact-sub r">Open to growth marketing roles, campaign strategy work, and thoughtful collaborations. Reach out through whichever channel feels easiest.</p>
+      <p class="contact-sub r">Engaged in growth marketing and campaign strategy, and open to collaborating on impactful initiatives. Happy to connect via any convenient channel.</p>
       <div class="contact-btns r">
         <a href="mailto:goswamiananya04@gmail.com" class="c-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
